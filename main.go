@@ -14,6 +14,8 @@ func main() {
 	taskList := []string {taskOne, taskTwo, taskThree, taskFour, taskFive}
 
 	fmt.Println("#### Todo List ####")
-	// Prints taskList to the console
-	fmt.Println("Here's whacha gotta do:\n", taskList)
+
+	for _, task := range taskList {
+		fmt.Println(task)
+	}
 }
