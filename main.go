@@ -15,7 +15,8 @@ func main() {
 
 	fmt.Println("#### Todo List ####")
 
-	for _, task := range taskList {
-		fmt.Println(task)
+	// for loop that iterates through taskList, returning the index from 1 and value of task
+	for index, task := range taskList {
+		fmt.Printf("%d. %s\n", index+1, task)
 	}
 }
