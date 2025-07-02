@@ -16,6 +16,8 @@ func main() {
 			taskList = []string {taskOne, taskTwo, taskThree, taskFour, taskFive}
 		)
 		printTasks(taskList)
+		fmt.Println()
+		addTask(taskList, "Eat chicken nuggets.")
 }
 
 // Iterates through taskList, printing each task with its position (starting from 1)
@@ -24,4 +26,9 @@ func printTasks(taskList []string) {
 		for index, task := range taskList {
 			fmt.Printf("%d. %s\n", index+1, task)
 		}
+}
+
+func addTask(taskItems []string, newTask string) {
+	var updatedTaskList = append(taskItems, newTask)
+	printTasks(updatedTaskList)
 }
